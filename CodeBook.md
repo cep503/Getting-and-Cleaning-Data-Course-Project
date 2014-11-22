@@ -13,12 +13,12 @@ Original data comes from the smartphone accelerometer and gyroscope 3-axial raw 
 6. LAYING
 
 # Values in run_analysis.R:
-*DataFileURL: used to reference the URL from which info was downloaded
-*DataFileZIP: used to reference the downloaded zip file
-*DirFile: used to reference the downloaded data set
-*meanstd_cols: used to remove the unnecessary non mean or stf columns
-*tidyDataFile: file that combines all the test adn train data
-*tidyDataFileAVG.csv: file created as output
+* DataFileURL: used to reference the URL from which info was downloaded
+* DataFileZIP: used to reference the downloaded zip file
+* DirFile: used to reference the downloaded data set
+* meanstd_cols: used to remove the unnecessary non mean or stf columns
+* tidyDataFile: file that combines all the test adn train data
+* tidyDataFileAVG.csv: file created as output
 
 # Data in run_analysis.R - Data Descriptions:
 *x_test: data frame captured from download of x_test data
