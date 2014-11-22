@@ -6,7 +6,16 @@
 # C - Uses descriptive activity names to name the activities in the data set
 # D - Appropriately labels the data set with descriptive variable names. 
 # E - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-#  
+# 
+# You will be required to submit: 
+# 1) a tidy data set as described below, 
+# 2) a link to a Github repository with your script for performing the analysis, and
+# 3) a code book that describes the variables, the data, and any transformations or work 
+# that you performed to clean up the data called CodeBook.md. 
+# You should also include a README.md in the repo with your scripts. 
+# This repo explains how all of the scripts work and how they are connected.  
+# 
+# 
 #----------------------------------------------------------------------------------------------------
 # 0. First, download the data.
  
@@ -14,7 +23,7 @@
 print("First, we are going to download the data. Please wait while the program works its magic.")
 
 # File URL to download
-DataFileURL <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
+DataFileURL <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip' 
 
 # Local data file
 DataFileZIP <- "./getdata-projectfiles-UCI-HAR-Dataset.zip"
@@ -108,15 +117,15 @@ p <- combined[, 3:dim(combined)[2]]
 tidyDataAVGSet <- aggregate(p,list(combined$SubjectID, combined$Activity_Label), mean)
 
 #---------------------------------------------------------------------------------------------------------
-# Save the created file.:
-
-# Create csv (tidy data set) in directory
+# Create (tidy data set)and save the file
 write.table(combined, "tidyDataFile.csv", row.names=FALSE)
 # Created csv (tidy data set AVG) in diretory
 write.csv(tidyDataAVGSet, "tidyDataAVGSet.csv", row.names=FALSE)
+# Created txt (tidy data set AVG) in diretory
+write.table(tidyDataAVGSet, "tidyDataAVGSet.txt", sep="\t", row.names=FALSE, col.names=FALSE)
 
 print("Step E is complete.")
-print("A new file 'TidyDataAVGSet.csv' has been created in the root folder.") 
+print("A new file 'TidyDataAVGSet' has been created in the root folder.") 
 
 #---------------------------------------------------------------------------------------------------------
 # Sample output of this "run_analysis.R" file:
@@ -133,7 +142,7 @@ print("A new file 'TidyDataAVGSet.csv' has been created in the root folder.")
 #[1] "Step C+D is complete and descriptive activity labels have been added."
 #[1] "..."
 #[1] "Step E is complete."
-#[1] "A new file 'TidyDataAVGSet.csv' has been created in the root folder."
+#[1] "A new file 'TidyDataAVGSet' has been created in the root folder."
 
 # NOTE:
 # The tidy data averages file that is created dshould have dimensions of 180 observations and 68 variables
