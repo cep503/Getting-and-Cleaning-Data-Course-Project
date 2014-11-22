@@ -2,8 +2,7 @@
 Contains information describes the variables, the data, and any transformations or work performed to clean up the data for the course project.
  
 #Original Data
-
-There original data comes from the smartphone accelerometer and gyroscope 3-axial raw signals, which have been processed using various signal processing techniques to measurement vector consisting of 561 features. For detailed description of the original dataset, please see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
+Original data comes from the smartphone accelerometer and gyroscope 3-axial raw signals, processed using various signal processing techniques to measurement vector consisting of 561 features. For detailed description of the original dataset, please see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
 
 # Activity Labels
 1 WALKING, 
@@ -34,6 +33,14 @@ features: data frame that has the labels for the x test and train data (561 rows
 combined: data frame that combines all test and train data 
 p: data frame used to consolidate the averages for the combined file
 tidyDataAVGSet: contains the averages of the mean/std columns - grouped as an average by subject and activity
+
+# Calculations in run_analysis.R:
+A - Merges the training and the test sets to create one data set.
+B - Extracts only the measurements on the mean and standard deviation for each measurement. 
+C - Uses descriptive activity names to name the activities in the data set
+D - Appropriately labels the data set with descriptive variable names. 
+E - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
 
 # Script Output: Tidy Data Set
 Tidy data set contains the averages for standard deviation and mean values of the raw dataset. This data set has 180 rows and 68 variables. The rows consist of averages for 30 subjects, each of whom performed the 6 activities labeled above. Thus (30x6=180) total rows for which the column variables are averaged. 
