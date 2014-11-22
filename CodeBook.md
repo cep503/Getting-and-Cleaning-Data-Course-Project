@@ -21,18 +21,18 @@ Original data comes from the smartphone accelerometer and gyroscope 3-axial raw 
 * tidyDataFileAVG.csv: file created as output
 
 # Data in run_analysis.R - Data Descriptions:
-* x_test: data frame captured from download of x_test data
-* x_train: data frame captured from download of x_train data
-* y_test: data frame captured from download of y_test data
-* y_train: data frame captured from download of y_train data
-* subject_test: data frame captured from download of subject_test data
-* subject_train: data frame captured from download of subject_train data
-* test: data frame that combines all test data
-* train: data frame that combines all train data 
-* features: data frame that has the labels for the x test and train data (561 rows total)
-* combined: data frame that combines all test and train data 
-* p: data frame used to consolidate the averages for the combined file
-* tidyDataAVGSet: contains the averages of the mean/std columns - grouped as an average by subject and activity
+* x_test: data frame captured from download of x_test data (2947 obsx 561 var)
+* x_train: data frame captured from download of x_train data (7352 obs x 561 var)
+* y_test: data frame captured from download of y_test data (2947 obs x 1 var)
+* y_train: data frame captured from download of y_train data (7352 obs x 1 var)
+* subject_test: data frame captured from download of subject_test data (2947 obs x 1 var)
+* subject_train: data frame captured from download of subject_train data (7352 obs x 1 var)
+* test: data frame that combines all test data (2947 obs x 563 var)
+* train: data frame that combines all train data (7352 obs x 563 var)
+* features: data frame that has the labels for the x test and train data (561 obs x 2 var)
+* combined: data frame that combines all test and train data (10299 obs x 68 var)
+* p: data frame used to consolidate the averages for the combined file (10299 obs x 66 var)
+* tidyDataAVGSet: contains the averages of the mean/std columns - grouped as an average by subject and activity (180 obs x 68 var)
 
 # Calculations in run_analysis.R:
 * A - Merges the training and the test sets to create one data set.
