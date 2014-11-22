@@ -43,4 +43,4 @@ Original data comes from the smartphone accelerometer and gyroscope 3-axial raw 
 
 
 # Script Output: Tidy Data Set
-* Tidy data set contains the averages for standard deviation and mean values of the raw dataset. This data set has 180 rows and 68 variables. The rows consist of averages for 30 subjects, each of whom performed the 6 activities labeled above. Thus (30x6=180) total rows for which the column variables are averaged. 
+* Tidy data set contains the averages for standard deviation and mean values of the raw dataset. This data set has 180 rows and 68 variables. The rows consist of averages for 30 subjects, each of whom performed the 6 activities labeled above. Thus (30x6=180) total rows for which the column variables are averaged. The file is organized with the subjects 1 through 30, then the average for the activity <1>; then subjects 1 - 30, average for activity <2>, etc.
