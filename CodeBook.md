@@ -5,12 +5,12 @@ Contains information describes the variables, the data, and any transformations 
 Original data comes from the smartphone accelerometer and gyroscope 3-axial raw signals, processed using various signal processing techniques to measurement vector consisting of 561 features. For detailed description of the original dataset, please see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
 
 # Activity Labels
-1 WALKING, 
-2 WALKING_UPSTAIRS, 
-3 WALKING_DOWNSTAIRS, 
-4 SITTING, 
-5 STANDING, 
-6 LAYING
+1. WALKING, 
+2. WALKING_UPSTAIRS, 
+3. WALKING_DOWNSTAIRS, 
+4. SITTING, 
+5. STANDING, 
+6. LAYING
 
 # Values in run_analysis.R:
 DataFileURL: used to reference the URL from which info was downloaded
