@@ -19,7 +19,7 @@ description
 # Tidy Data Set
 Tidy data set contains the averages for standard deviation and mean values of the raw dataset. Original variable names were modified in the follonwing way:
 
-Replaced -mean with Mean
+Replaced -mean with Mean 
 Replaced -std with Std
 Removed parenthesis -()
 Replaced BodyBody with Body
